@@ -1,0 +1,80 @@
+@media screen and (max-width:440px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .title-page {
+        color: red;
+        text-align: center;
+    }
+
+    .fb {
+        position: absolute;
+        font-size: 12px;
+        margin-bottom: 30px;
+        border: 1px solid #444;
+        background-color: dodgerblue;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 5px 12px;
+        right: 5px;
+        top: 71px;
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .tieuDeCacSpDangGiaoBan {
+        text-transform: uppercase;
+        margin: 20px 20px 10px 20px;
+    }
+
+    .cacsp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .sp {
+        border: 1px solid black;
+        padding:10px;
+        margin: 10px;
+        width: 25%;
+    }
+
+    .sp .tensp {}
+
+    .sp .anhsp img {
+        width: 100%;
+    }
+
+    .sp .giasp span {color:red}
+
+
+
+    .comment{
+        border:1px solid black;
+        margin-top: 16px;
+    }
+    .binhluan{
+        margin-top: 15px;
+    }
+    input.vbl{
+        width:98%;
+    }
+    button{
+        background-color: cornflowerblue;
+        color:#464646;
+        border-radius: 5px;
+    }
+}
