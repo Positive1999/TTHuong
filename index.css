@@ -28,6 +28,9 @@
         left: -213px;
         font-size: 14px;
     }
+    .humberger{
+        display: none;
+    }
     .menu{
         display: flex;
         justify-content: space-evenly;
