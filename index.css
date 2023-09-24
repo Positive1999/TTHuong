@@ -130,6 +130,12 @@
         justify-content: center;
         background: linear-gradient(to left, #ffceced3, #fff1ee);
     }
+    .humberger{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right:5%;
+    }
     .logo .fa-kitchen-set{
         margin-right: 8px;
         transition: 0.9s all ease-in-out;
