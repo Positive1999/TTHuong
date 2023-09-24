@@ -196,13 +196,21 @@
         border-radius: 10px;
     }
 
-    .sp .tensp {}
+    .sp .tensp {
+        width: 100%;
+        height: 40px;
+    }
 
     .sp .anhsp img {
         width: 100%;
+        height: 150px;
     }
 
-    .sp .giasp span {color:red}
+    .sp .giasp span {
+        color:red;
+        width: 100%;
+        height: 150px;
+    }
 
 
 
