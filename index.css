@@ -1,4 +1,4 @@
-@media screen and (max-width:440px) {
+@media screen and (min-width:440px) {
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
@@ -6,32 +6,60 @@
         box-sizing: border-box;
     }
 
-    .title-page {
-        color: red;
+    .navbar{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        color: #000000;
         text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding:15px;
+        background: linear-gradient(to left, #ffceced3, #fff1ee);
+    }
+    .logo .fa-kitchen-set{
+        margin-right: 8px;
+        transition: 0.9s all ease-in-out;
+    }
+    .logo h1::after{
+        position: relative;
+        content: 'VÀ ĂN VẶT';
+        top: 23px;
+        left: -213px;
+        font-size: 14px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color:#ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .trungbay, .sanpham, .bl{
+        margin-right: 40px;
+        border-radius: 5px;
+        background-color: grey;
+        padding:16px 25px;
     }
 
-    .fb {
-        position: absolute;
+    /* .fb {
         font-size: 12px;
-        margin-bottom: 30px;
+        margin: 60px;
         border: 1px solid #444;
         background-color: dodgerblue;
         color: #FFF;
         border-radius: 10px;
         padding: 5px 12px;
-        right: 5px;
-        top: 71px;
-    }
+
+    } */
 
     .banner {
-        margin-top: 50px;
+        margin-top: 118px;
     }
-
     .banner img {
         width: 100%;
     }
-
     .tieuDeCacSpDangGiaoBan {
         text-transform: uppercase;
         margin: 20px 20px 10px 20px;
@@ -46,8 +74,8 @@
         flex-wrap: wrap;
     }
 
-    .sp {
-        display: none;
+    .cacsp .sp {
+        /* display: none; */
         border: 1px solid black;
         padding:10px;
         margin: 10px;
@@ -71,6 +99,122 @@
     }
     .binhluan{
         margin-top: 15px;
+    }
+    .nhapCMT input{
+        width: 98%;
+    }
+    input.vbl{
+        width:98%;
+    }
+    button{
+        background-color: cornflowerblue;
+        color:#464646;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width:440px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        color: #000000;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to left, #ffceced3, #fff1ee);
+    }
+    .logo .fa-kitchen-set{
+        margin-right: 8px;
+        transition: 0.9s all ease-in-out;
+    }
+    .logo h1::after{
+        position: relative;
+        content: 'VÀ ĂN VẶT';
+        top: 23px;
+        left: -213px;
+        font-size: 14px;
+    }
+    .menu{
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        color:#ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .trungbay, .sanpham, .bl{
+        margin-right: 40px;
+        border-radius: 5px;
+        background-color: grey;
+        padding:16px 25px;
+    }
+
+    /* .fb {
+        font-size: 12px;
+        margin: 60px;
+        border: 1px solid #444;
+        background-color: dodgerblue;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 5px 12px;
+
+    } */
+
+    .banner {
+        margin-top: 118px;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .tieuDeCacSpDangGiaoBan {
+        text-transform: uppercase;
+        margin: 20px 20px 10px 20px;
+    }
+
+    .cacsp {
+       
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .cacsp .sp {
+        /* display: none; */
+        border: 1px solid black;
+        padding:10px;
+        margin: 10px;
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    .sp .tensp {}
+
+    .sp .anhsp img {
+        width: 100%;
+    }
+
+    .sp .giasp span {color:red}
+
+
+
+    .comment{
+        border:1px solid black;
+        margin-top: 16px;
+    }
+    .binhluan{
+        margin-top: 15px;
+    }
+    .nhapCMT input{
+        width: 98%;
     }
     input.vbl{
         width:98%;
