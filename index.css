@@ -99,6 +99,7 @@
     .comment{
         border:1px solid black;
         margin-top: 16px;
+        width: 100%;
     }
     .binhluan{
         margin-top: 15px;
@@ -226,6 +227,7 @@
     .comment{
         border:1px solid black;
         margin-top: 16px;
+        width: 100%;
     }
     .binhluan{
         margin-top: 15px;
