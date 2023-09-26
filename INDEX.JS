@@ -77,3 +77,12 @@ $(document).ready(function() {
       });
     });
   }})
+
+
+
+  $(function(){
+    cmt = $('.comment').offset().top;
+     $('.bl').click(function(){
+         $('body,html').animate({scrollTop:cmt});
+     })
+ })
