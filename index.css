@@ -6,6 +6,10 @@
         box-sizing: border-box;
     }
 
+    .an {
+        display: none;
+    }
+
     .navbar {
         position: fixed;
         width: 100%;
@@ -92,37 +96,37 @@
         margin: 20px;
         border-radius: 5px;
         background-color: #f9f9f9;
-      }
-      
-      .tensp {
+    }
+
+    .tensp {
         font-size: 18px;
         font-weight: bold;
         color: #333;
         margin-bottom: 10px;
-      }
-      
-      .anhsp img {
+    }
+
+    .anhsp img {
         width: 100%;
         max-width: 200px;
         height: auto;
         display: block;
         margin-bottom: 10px;
-      }
-      
-      .gia {
+    }
+
+    .gia {
         margin-top: 10px;
-      }
-      
-      .giasp {
+    }
+
+    .giasp {
         font-size: 14px;
         color: #888;
         margin-bottom: 5px;
-      }
-      
-      .giasp span {
+    }
+
+    .giasp span {
         font-weight: bold;
         color: #f00;
-      }
+    }
 
 
     .comment {
@@ -162,6 +166,10 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    .dcn {
+        display: none;
     }
 
     .navbar {
@@ -240,7 +248,10 @@
 
     .tieuDeCacSpDangGiaoBan {
         text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 25px;
         margin: 20px 20px 10px 20px;
+        color: #e84118;
     }
 
     .cacsp {
@@ -250,6 +261,7 @@
         overflow: hidden;
         flex-wrap: wrap;
     }
+
     .sp {
         width: 80%;
         padding: 10px;
@@ -257,35 +269,35 @@
         border-radius: 8px;
         background-color: #f9f9f9;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      }
-      
-      .tensp {
+    }
+
+    .tensp {
         font-size: 22px;
         font-weight: bold;
         color: #333;
         margin-bottom: 10px;
-      }
-      
-      .anhsp img {
+    }
+
+    .anhsp img {
         width: 100%;
         height: auto;
         margin-bottom: 10px;
-      }
-      
-      .gia {
+    }
+
+    .gia {
         margin-top: 10px;
-      }
-      
-      .giasp {
+    }
+
+    .giasp {
         font-size: 14px;
         color: #888;
         margin-bottom: 5px;
-      }
-      
-      .giasp span {
+    }
+
+    .giasp span {
         font-weight: bold;
         color: #f00;
-      }
+    }
 
 
 

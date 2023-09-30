@@ -10,6 +10,20 @@ setInterval(() => {
   isRotated = !isRotated;
 }, 1200);
 
+var down = document.querySelector('.fa-down-long');
+let isDown = false;
+
+setInterval(() => {
+  if (isDown) {
+    down.style.transform = 'translateY(0)';
+    down.style.color = '#4cd137';
+  } else {
+    down.style.transform = 'translateY(5px)';
+    down.style.color = '#e84118';
+  }
+  isDown = !isDown;
+}, 1000);
+
 
 var menu = document.querySelector('.menu');
 var humberger = document.querySelector('.humberger');
