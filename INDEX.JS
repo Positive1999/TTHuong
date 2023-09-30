@@ -86,3 +86,10 @@ $(document).ready(function() {
          $('body,html').animate({scrollTop:cmt});
      })
  })
+
+  $(function(){
+    trungBay = $('.banner').offset().top;
+     $('.trungbay').click(function(){
+         $('body,html').animate({scrollTop:trungBay});
+     })
+ })
