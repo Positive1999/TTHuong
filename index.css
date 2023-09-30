@@ -86,29 +86,43 @@
         flex-wrap: wrap;
     }
 
-    .cacsp .sp {
-        /* display: none; */
-        /* border: 1px solid black; */
-        padding: 10px;
-        margin: 10px;
-        width: 25%;
-        border-radius: 10px;
-    }
-
     .sp {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .sp .tensp {}
-
-    .sp .anhsp img {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      
+      .tensp {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .anhsp img {
         width: 100%;
-    }
-
-    .sp .giasp span {
-        color: red
-    }
-
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      .gia {
+        margin-top: 10px;
+      }
+      
+      .giasp {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+      
+      .giasp span {
+        font-weight: bold;
+        color: #f00;
+      }
 
 
     .comment {
@@ -135,7 +149,8 @@
         border-radius: 5px;
     }
 }
- /* het may tinh */
+
+/* het may tinh */
 
 
 
@@ -194,12 +209,14 @@
     }
 
     .trungbay,
-    .sanpham,
+    .dodung,
+    .doan,
     .bl {
         margin-right: 40px;
         border-radius: 5px;
         background-color: grey;
         padding: 16px 25px;
+        border-bottom: 2px solid yellow;
     }
 
     /* .fb {
@@ -227,39 +244,48 @@
     }
 
     .cacsp {
-
         width: 100%;
         display: flex;
         justify-content: center;
         overflow: hidden;
         flex-wrap: wrap;
     }
-
-    .cacsp .sp {
-        /* display: none; */
-        padding: 10px;
-        margin: 10px;
+    .sp {
         width: 80%;
-        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .sp .tensp {
+      }
+      
+      .tensp {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .anhsp img {
         width: 100%;
-        height: 40px;
-        text-align: center;
-    }
-
-    .sp .anhsp img {
-        width: 100%;
-        
-    }
-
-    .sp .giasp span {
-        color: red;
-        width: 100%;
-        height: 150px;
-    }
+        height: auto;
+        margin-bottom: 10px;
+      }
+      
+      .gia {
+        margin-top: 10px;
+      }
+      
+      .giasp {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 5px;
+      }
+      
+      .giasp span {
+        font-weight: bold;
+        color: #f00;
+      }
 
 
 
