@@ -6,7 +6,7 @@
         box-sizing: border-box;
     }
 
-    .navbar{
+    .navbar {
         position: fixed;
         width: 100%;
         top: 0;
@@ -14,36 +14,43 @@
         text-align: center;
         display: flex;
         justify-content: space-evenly;
-        padding:15px;
+        padding: 15px;
         background: linear-gradient(to left, #ffceced3, #fff1ee);
     }
-    .logo .fa-kitchen-set{
+
+    .logo .fa-kitchen-set {
         margin-right: 8px;
         transition: 0.9s all ease-in-out;
     }
-    .logo h1::after{
+
+    .logo h1::after {
         position: relative;
         content: 'VÀ ĂN VẶT';
         top: 23px;
         left: -213px;
         font-size: 14px;
     }
-    .humberger{
+
+    .humberger {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        color:#ffffff;
+        color: #ffffff;
         font-weight: bold;
         cursor: pointer;
     }
-    .trungbay, .sanpham, .bl{
+
+    .trungbay,
+    .sanpham,
+    .bl {
         margin-right: 40px;
         border-radius: 5px;
         background-color: grey;
-        padding:16px 25px;
+        padding: 16px 25px;
     }
 
     /* .fb {
@@ -60,16 +67,18 @@
     .banner {
         margin-top: 118px;
     }
+
     .banner img {
         width: 100%;
     }
+
     .tieuDeCacSpDangGiaoBan {
         text-transform: uppercase;
         margin: 20px 20px 10px 20px;
     }
 
     .cacsp {
-       
+
         width: 100%;
         display: flex;
         justify-content: center;
@@ -79,11 +88,15 @@
 
     .cacsp .sp {
         /* display: none; */
-        border: 1px solid black;
-        padding:10px;
+        /* border: 1px solid black; */
+        padding: 10px;
         margin: 10px;
         width: 25%;
         border-radius: 10px;
+    }
+
+    .sp {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     .sp .tensp {}
@@ -92,30 +105,42 @@
         width: 100%;
     }
 
-    .sp .giasp span {color:red}
+    .sp .giasp span {
+        color: red
+    }
 
 
 
-    .comment{
-        border:1px solid black;
+    .comment {
+        border: 1px solid black;
         margin-top: 16px;
         width: 100%;
     }
-    .binhluan{
+
+    .binhluan {
         margin-top: 15px;
     }
-    .nhapCMT input{
+
+    .nhapCMT input {
         width: 98%;
     }
-    input.vbl{
-        width:98%;
+
+    input.vbl {
+        width: 98%;
     }
-    button{
+
+    button {
         background-color: cornflowerblue;
-        color:#464646;
+        color: #464646;
         border-radius: 5px;
     }
 }
+ /* het may tinh */
+
+
+
+
+
 @media screen and (max-width:440px) {
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -124,7 +149,7 @@
         box-sizing: border-box;
     }
 
-    .navbar{
+    .navbar {
         position: fixed;
         width: 100%;
         top: 0;
@@ -134,40 +159,47 @@
         justify-content: center;
         background: linear-gradient(to left, #ffceced3, #fff1ee);
     }
-    .humberger{
+
+    .humberger {
         position: absolute;
-        top:50%;
+        top: 50%;
         transform: translateY(-50%);
-        right:5%;
+        right: 5%;
     }
-    .logo .fa-kitchen-set{
+
+    .logo .fa-kitchen-set {
         margin-right: 8px;
         transition: 0.9s all ease-in-out;
     }
-    .logo h1::after{
+
+    .logo h1::after {
         position: relative;
         content: 'VÀ ĂN VẶT';
         top: 23px;
         left: -213px;
         font-size: 14px;
     }
-    .menu{
+
+    .menu {
         display: none;
         position: absolute;
-        top:100%;
-        right:-39px;
+        top: 100%;
+        right: -39px;
         justify-content: space-evenly;
         align-items: center;
-        color:#ffffff;
+        color: #ffffff;
         font-weight: bold;
         cursor: pointer;
-       
+
     }
-    .trungbay, .sanpham, .bl{
+
+    .trungbay,
+    .sanpham,
+    .bl {
         margin-right: 40px;
         border-radius: 5px;
         background-color: grey;
-        padding:16px 25px;
+        padding: 16px 25px;
     }
 
     /* .fb {
@@ -184,16 +216,18 @@
     .banner {
         margin-top: 118px;
     }
+
     .banner img {
         width: 100%;
     }
+
     .tieuDeCacSpDangGiaoBan {
         text-transform: uppercase;
         margin: 20px 20px 10px 20px;
     }
 
     .cacsp {
-       
+
         width: 100%;
         display: flex;
         justify-content: center;
@@ -203,11 +237,11 @@
 
     .cacsp .sp {
         /* display: none; */
-        border: 1px solid black;
-        padding:10px;
+        padding: 10px;
         margin: 10px;
         width: 25%;
         border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     .sp .tensp {
@@ -222,30 +256,36 @@
     }
 
     .sp .giasp span {
-        color:red;
+        color: red;
         width: 100%;
         height: 150px;
     }
 
 
 
-    .comment{
-        border:1px solid black;
+    .comment {
+        border: 1px solid black;
         margin-top: 16px;
         width: 100%;
     }
-    .binhluan{
+
+    .binhluan {
         margin-top: 15px;
     }
-    .nhapCMT input{
+
+    .nhapCMT input {
         width: 98%;
     }
-    input.vbl{
-        width:98%;
+
+    input.vbl {
+        width: 98%;
     }
-    button{
+
+    button {
         background-color: cornflowerblue;
-        color:#464646;
+        color: #464646;
         border-radius: 5px;
     }
 }
+
+/* het mobile */
