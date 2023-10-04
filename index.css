@@ -302,6 +302,7 @@
         display: none;
     }
     .divBtn{
+        margin-top: 6px;
         width: 100%;
         display: flex;
         justify-content: center;
