@@ -307,6 +307,10 @@
         display: flex;
         justify-content: center;
     }
+    .dodung a , .doan a{
+        text-decoration: none;
+        color:white;
+    }
 
     .comment {
         border: 1px solid black;
