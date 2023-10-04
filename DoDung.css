@@ -31,7 +31,24 @@
         padding: 10px;
         background-color: #f7f7f7;
         border-bottom: 2px solid #ccc;
-    }   
+    } 
+    .fa-bars{
+        position: relative;
+    }
+    a.chuyenTrang{
+        display: none;
+        position: absolute;
+        width: 500%;
+        top:200%;
+        right:0%;
+        text-decoration: none;
+        background-color: #888;
+        padding:5px 10px;
+        text-transform: lowercase;
+        color:white;
+        border-radius: 10px;
+        cursor: pointer;
+    }  
 
     .cacsp {
         width: 100%;
