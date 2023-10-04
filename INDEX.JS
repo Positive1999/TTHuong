@@ -43,20 +43,20 @@ humberger.addEventListener('click', () => {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Kiểm tra loại màn hình khi tải xong tài liệu
 
   if (window.matchMedia("(max-width: 600px)").matches) {
     // Thực hiện hành động dành cho màn hình nhỏ hơn hoặc bằng 600px
     console.log("Màn hình nhỏ");
 
-    $(document).ready(function() {
-      $(window).scroll(function() {
+    $(document).ready(function () {
+      $(window).scroll(function () {
         var banner = $('.banner');
         var bannerBottom = banner.offset().top + banner.outerHeight();
         var scrollPosition = $(window).scrollTop();
         var taskbar = $('.taskbar');
-        
+
         if (scrollPosition >= bannerBottom) {
           taskbar.css('background-color', 'pink');
         } else {
@@ -74,13 +74,13 @@ $(document).ready(function() {
     console.log("Màn hình lớn");
 
 
-    $(document).ready(function() {
-      $(window).scroll(function() {
+    $(document).ready(function () {
+      $(window).scroll(function () {
         var banner = $('.banner');
         var bannerBottom = banner.offset().top + banner.outerHeight();
         var scrollPosition = $(window).scrollTop();
         var taskbar = $('.taskbar');
-        
+
         if (scrollPosition >= bannerBottom) {
           taskbar.css('background-color', 'green');
           taskbar.css('padding', '10px');
@@ -90,20 +90,67 @@ $(document).ready(function() {
         }
       });
     });
-  }})
+  }
+})
 
 
 
-  $(function(){
-    cmt = $('.comment').offset().top;
-     $('.bl').click(function(){
-         $('body,html').animate({scrollTop:cmt});
-     })
- })
+$(function () {
+  cmt = $('.comment').offset().top;
+  $('.bl').click(function () {
+    $('body,html').animate({ scrollTop: cmt });
+  })
+})
 
-  $(function(){
-    trungBay = $('.banner').offset().top;
-     $('.trungbay').click(function(){
-         $('body,html').animate({scrollTop:trungBay});
-     })
- })
+$(function () {
+  trungBay = $('.banner').offset().top;
+  $('.trungbay').click(function () {
+    $('body,html').animate({ scrollTop: trungBay });
+  })
+})
+
+
+var products = document.querySelectorAll('.sp');
+var visibleItem = 5;
+var btnXemThem = document.getElementById('xemThem');
+var btnAnBot = document.getElementById('anBot');
+var totalProducts = products.length;
+
+ // Hiển thị 5 sản phẩm đầu tiên, ẩn các sản phẩm còn lại
+ for (var i = 0; i < totalProducts; i++) {
+  if (i < visibleItem) {
+      products[i].style.display = 'block';
+  } else {
+      products[i].style.display = 'none';
+  }
+}
+
+  // Xử lý sự kiện khi nhấp vào nút "Xem thêm"
+  btnXemThem.addEventListener('click', function () {
+    // Hiển thị các sản phẩm còn lại
+    for (var i = visibleItem; i < totalProducts; i++) {
+        products[i].style.display = 'block';
+    }
+
+    // Ẩn nút "Xem thêm"
+    // Hiện nút "Ẩn bớt"
+    btnXemThem.style.display = 'none';
+    btnAnBot.style.display = 'block';
+});
+
+btnAnBot.addEventListener('click', function () {
+    // về ban đầu có 5 sản phẩm 
+    for (var i = 0; i < totalProducts; i++) {
+    if (i < visibleItem) {
+        products[i].style.display = 'block';
+    } else {
+        products[i].style.display = 'none';
+    }
+}
+    //Hiện nút "Xem thêm"
+    //Ẩn nút "Ẩn bớt"
+    btnXemThem.style.display = 'block';
+    btnAnBot.style.display = 'none';
+});
+
+
