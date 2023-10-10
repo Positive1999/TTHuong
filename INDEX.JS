@@ -154,13 +154,42 @@ btnAnBot.addEventListener('click', function () {
 });
 
 
-function notifyShop() {
-  // Thực hiện các bước xử lý thông báo tại đây
-  // Ví dụ: Gửi thông báo qua Email
-  var email = "hieutran11525@gmail.com";
-  var subject = "";
-  var body = "Bạn đã nhận được một đơn hàng mới từ khách hàng.";
+// function notifyShop() {
+//   // Thực hiện các bước xử lý thông báo tại đây
+//   // Ví dụ: Gửi thông báo qua Email
+//   var email = "hieutran11525@gmail.com";
+//   var subject = "";
+//   var body = "Bạn đã nhận được một đơn hàng mới từ khách hàng.";
 
-  var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+//   var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+//   window.location.href = mailtoLink;
+// }
+
+
+function decreaseQuantity() {
+  var quantityInput = document.querySelector('.quantity-input');
+  var currentQuantity = parseInt(quantityInput.value);
+  if (currentQuantity > 1) {
+      quantityInput.value = currentQuantity - 1;
+  }
+}
+
+function increaseQuantity() {
+  var quantityInput = document.querySelector('.quantity-input');
+  var currentQuantity = parseInt(quantityInput.value);
+  quantityInput.value = currentQuantity + 1;
+}
+
+function notifyShop() {
+  var shopEmail = "yourshop@example.com";
+  var subject = "Đặt hàng mới từ khách hàng";
+  var quantityInput = document.querySelector('.quantity-input');
+  var quantity = parseInt(quantityInput.value);
+  var priceSpan = document.querySelector('.gia-span');
+  var price = priceSpan.textContent;
+
+  var body = "Đơn hàng mới:\n\nSố lượng: " + quantity + "\nGiá: " + price;
+
+  var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
