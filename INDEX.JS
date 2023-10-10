@@ -194,7 +194,7 @@ function increaseQuantity() {
 //   window.location.href = mailtoLink;
 // }
 function notifyShop() {
-  var shopEmail = "yourshop@example.com";
+  var shopEmail = "hieutran11525@gmail.com";
   var subject = "Đặt hàng mới từ khách hàng";
   var productName = document.querySelector('.tensp').textContent;
   var quantityInput = document.querySelector('.quantity-input');
