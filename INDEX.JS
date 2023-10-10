@@ -154,3 +154,13 @@ btnAnBot.addEventListener('click', function () {
 });
 
 
+function notifyShop() {
+  // Thực hiện các bước xử lý thông báo tại đây
+  // Ví dụ: Gửi thông báo qua Email
+  var email = "hieutran11525@gmail.com";
+  var subject = "Có khách hàng mới đặt hàng";
+  var body = "Bạn đã nhận được một đơn hàng mới từ khách hàng.";
+
+  var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  window.location.href = mailtoLink;
+}
