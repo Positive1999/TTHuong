@@ -1,3 +1,8 @@
+@media screen and (min-width:440px){
+    body{
+        display: none;
+    }
+}
 @media screen and (max-width:440px) {
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
