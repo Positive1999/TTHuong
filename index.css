@@ -326,6 +326,7 @@
         cursor: pointer;
         text-align: center;
         line-height: 36px;
+        font-weight: bolder;
     }
 
     .buy:hover {
