@@ -299,10 +299,18 @@
         font-weight: bold;
         color: #f00;
     }
+    .quantity{
+        width: 100%;
+        margin: 0.2cm 0cm;
+        text-align: center;
+    }
+    .quantity-buttons{
+        margin-top: 0.2cm;
+        margin-bottom: 0.4cm;
+    }
 
     .giaVaMua {
         display: flex;
-height: 36px;
     }
 
     .buy {
