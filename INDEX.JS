@@ -180,13 +180,16 @@ function increaseQuantity() {
   quantityInput.value = currentQuantity + 1;
 }
 
-function notifyShop() {
+function notifyShop(productElement) {
   var shopEmail = "hieutran11525@gmail.com";
   var subject = "Đặt hàng mới từ khách hàng";
-  var productName = document.querySelector('.tensp').textContent;
-  var quantityInput = document.querySelector('.quantity-input');
+
+  var productName = productElement.querySelector('.tensp').textContent;
+  
+  var quantityInput = productElement.querySelector('.quantity-input');
   var quantity = parseInt(quantityInput.value);
-  var priceSpan = document.querySelector('.gia-span');
+
+  var priceSpan = productElement.querySelector('.gia span');
   var price = parseInt(priceSpan.textContent);
 
   var total = quantity * price;
@@ -197,6 +200,24 @@ function notifyShop() {
   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
+
+// function notifyShop() {
+//   var shopEmail = "hieutran11525@gmail.com";
+//   var subject = "Đặt hàng mới từ khách hàng";
+//   var productName = document.querySelectorAll('.tensp').textContent;
+//   var quantityInput = document.querySelector('.quantity-input');
+//   var quantity = parseInt(quantityInput.value);
+//   var priceSpan = document.querySelector('.gia-span');
+//   var price = parseInt(priceSpan.textContent);
+
+//   var total = quantity * price;
+//   var formattedTotal = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+
+//   var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + formattedTotal ;
+
+//   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+//   window.location.href = mailtoLink;
+// }
 
 // function notifyShop() {
 //   var shopEmail = "hieutran11525@gmail.com";
