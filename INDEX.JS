@@ -201,8 +201,9 @@ function notifyShop() {
   var quantity = parseInt(quantityInput.value);
   var priceSpan = document.querySelector('.gia-span');
   var price = priceSpan.textContent;
+  var total =quantity*price;
 
-  var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + price;
+  var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + total;
 
   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
