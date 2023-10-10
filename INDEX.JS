@@ -180,19 +180,6 @@ function increaseQuantity() {
   quantityInput.value = currentQuantity + 1;
 }
 
-// function notifyShop() {
-//   var shopEmail = "hieutran11525@gmail.com";
-//   var subject = "Đặt hàng mới từ khách hàng";
-//   var quantityInput = document.querySelector('.quantity-input');
-//   var quantity = parseInt(quantityInput.value);
-//   var priceSpan = document.querySelector('.gia-span');
-//   var price = priceSpan.textContent;
-
-//   var body = "Đơn hàng mới:\n\n Tên sản phẩm" + + "\nSố lượng: " + quantity + "\nGiá: " + (price*quantity) ;
-
-//   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-//   window.location.href = mailtoLink;
-// }
 function notifyShop() {
   var shopEmail = "hieutran11525@gmail.com";
   var subject = "Đặt hàng mới từ khách hàng";
@@ -200,11 +187,29 @@ function notifyShop() {
   var quantityInput = document.querySelector('.quantity-input');
   var quantity = parseInt(quantityInput.value);
   var priceSpan = document.querySelector('.gia-span');
-  var price = priceSpan.textContent;
-  var total =quantity*price;
+  var price = parseInt(priceSpan.textContent);
 
-  var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + total;
+  var total = quantity * price;
+  var formattedTotal = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+
+  var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + formattedTotal ;
 
   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
+
+// function notifyShop() {
+//   var shopEmail = "hieutran11525@gmail.com";
+//   var subject = "Đặt hàng mới từ khách hàng";
+//   var productName = document.querySelector('.tensp').textContent;
+//   var quantityInput = document.querySelector('.quantity-input');
+//   var quantity = parseInt(quantityInput.value);
+//   var priceSpan = document.querySelector('.gia-span');
+//   var price = priceSpan.textContent;
+//   var total =quantity*price;
+
+//   var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + total;
+
+//   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+//   window.location.href = mailtoLink;
+// }
