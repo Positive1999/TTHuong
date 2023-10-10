@@ -181,7 +181,7 @@ function increaseQuantity() {
 }
 
 function notifyShop() {
-  var shopEmail = "hieutran11525@.com";
+  var shopEmail = "hieutran11525@gmail.com";
   var subject = "Đặt hàng mới từ khách hàng";
   var quantityInput = document.querySelector('.quantity-input');
   var quantity = parseInt(quantityInput.value);
