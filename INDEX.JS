@@ -137,7 +137,7 @@ var totalProducts = products.length;
     btnXemThem.style.display = 'none';
     btnAnBot.style.display = 'block';
 });
-
+  // Xử lý sự kiện khi nhấp vào nút "ẩn bớt"
 btnAnBot.addEventListener('click', function () {
     // về ban đầu có 5 sản phẩm 
     for (var i = 0; i < totalProducts; i++) {
@@ -153,17 +153,6 @@ btnAnBot.addEventListener('click', function () {
     btnAnBot.style.display = 'none';
 });
 
-
-// function notifyShop() {
-//   // Thực hiện các bước xử lý thông báo tại đây
-//   // Ví dụ: Gửi thông báo qua Email
-//   var email = "hieutran11525@gmail.com";
-//   var subject = "";
-//   var body = "Bạn đã nhận được một đơn hàng mới từ khách hàng.";
-
-//   var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-//   window.location.href = mailtoLink;
-// }
 
 
 function decreaseQuantity() {
@@ -200,37 +189,3 @@ function notifyShop(productElement) {
   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
-
-// function notifyShop() {
-//   var shopEmail = "hieutran11525@gmail.com";
-//   var subject = "Đặt hàng mới từ khách hàng";
-//   var productName = document.querySelectorAll('.tensp').textContent;
-//   var quantityInput = document.querySelector('.quantity-input');
-//   var quantity = parseInt(quantityInput.value);
-//   var priceSpan = document.querySelector('.gia-span');
-//   var price = parseInt(priceSpan.textContent);
-
-//   var total = quantity * price;
-//   var formattedTotal = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
-
-//   var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + formattedTotal ;
-
-//   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-//   window.location.href = mailtoLink;
-// }
-
-// function notifyShop() {
-//   var shopEmail = "hieutran11525@gmail.com";
-//   var subject = "Đặt hàng mới từ khách hàng";
-//   var productName = document.querySelector('.tensp').textContent;
-//   var quantityInput = document.querySelector('.quantity-input');
-//   var quantity = parseInt(quantityInput.value);
-//   var priceSpan = document.querySelector('.gia-span');
-//   var price = priceSpan.textContent;
-//   var total =quantity*price;
-
-//   var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + total;
-
-//   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-//   window.location.href = mailtoLink;
-// }
