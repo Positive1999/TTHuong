@@ -6,7 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đồ gia dụng</title>
     <link rel="stylesheet" href="index.css">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+    <style>
+        .slider-container {
+            margin-top: 90px;
+            z-index: -10;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 300%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +57,16 @@
 
     </div>
 
-    <div class="banner"><img src="img/banner1.jpg" alt=""></div>
+    <!-- <div class="banner"><img src="img/banner1.jpg" alt=""></div> -->
+
+   <div class="slider-container">
+        <div class="slider">
+            <img src="img/banner1.jpg" alt="Slide 1">
+            <img src="img/banner1.jpg" alt="Slide 2">
+            <img src="img/banner1.jpg" alt="Slide 3">
+        </div>
+    </div>
+      <!-- het slider -->
 
     <div class="tieuDeCacSpDangGiaoBan"> sản phẩm <i class="fa-solid fa-down-long"></i> </div>
     <div class="cacsp">
@@ -424,11 +455,36 @@
                 </div>
             </footer>
         </div>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </div>
+
+
+     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <SCRIPT SRC="INDEX.JS"></SCRIPT>
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider');
+            let currentSlide = 0;
+            const slides = slider.querySelectorAll('img');
+            const slideCount = slides.length;
+            const slideWidth = slides[0].clientWidth;
 
+            function moveToSlide(slideIndex) {
+                if (slideIndex < 0 || slideIndex >= slideCount) {
+                    return;
+                }
+
+                slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+                currentSlide = slideIndex;
+            }
+
+            function nextSlide() {
+                moveToSlide(currentSlide + 1);
+            }
+
+            setInterval(nextSlide, 3000);
+        });
+    </script>
+</body>
 </html>
