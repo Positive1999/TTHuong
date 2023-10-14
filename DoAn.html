@@ -16,57 +16,113 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="DoDung.css">
 </head>
 <body>
     <div class="header-doGiaDung fixed-top bg-light p-3 container-fluid mt-0">
         <div class="cancel"><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Trang chủ</a></div>
         <div class="humberger">
             <i class="fa-solid fa-bars">
-                <a class="chuyenTrang" href="DoDung.html">Đồ dùng</a>
+                <a class="chuyenTrang" href="DoAn.html">Đồ ăn</a>
             </i>
         </div>
     </div>
     <!-- het header -->
+
     <div class="banner-do-dung" >
-        <img style="width: 100%; margin:40px 0 20px 0;" src="img/doAn/bannerDoAn.jpg" alt="">
+        <img style="width: 100%; margin:0px 0 20px 0;" src="img/doAn/bannerDoAn.jpg" alt="">
     </div>
     <!-- het banner  -->
-    <h2 class="tieuDePageDoAn">Đồ ăn </h2>
 
+    <h2 class="tieuDePageDoAn">Đồ ăn </h2>
     <div class="cacsp">
-        <div class="sp">
+
+         <div class="sp">
             <div class="tensp">Thắng cố</div>
             <div class="anhsp"><img src="img/doAn/thangCo.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>100.000đ</del></div>
-            <div class="giasp">Giá : <span>90.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>100.000đ</del></div>
+                    <div class="giasp">Giá : <span>90.000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
-        <div class="sp">
+         <div class="sp">
             <div class="tensp">Cam sành</div>
             <div class="anhsp"><img src="img/doAn/camSanh.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>250.000đ</del></div>
-            <div class="giasp">Giá : <span>230.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>250.000đ</del></div>
+                    <div class="giasp">Giá : <span>230.000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
-        <div class="sp">
+         <div class="sp">
             <div class="tensp">Ngô chiên bơ</div>
             <div class="anhsp"><img src="img/doAn/ngoChienBo.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>50.000đ</del></div>
-            <div class="giasp">Giá : <span>40.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>50.000đ</del></div>
+                    <div class="giasp">Giá : <span>40.000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
-        <div class="sp">
+         <div class="sp">
             <div class="tensp">Gà ri</div>
             <div class="anhsp"><img src="img/doAn/gaLuoc.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>129.000đ</del></div>
-            <div class="giasp">Giá : <span>119.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>129.000đ</del></div>
+                    <div class="giasp">Giá : <span>119.000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
-        <div class="sp">
-            <div class="tensp">Bim Bim</div>
+         <div class="sp">
+            <div class="tensp">Bim bim</div>
             <div class="anhsp"><img src="img/doAn/bimBim.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>55.000đ</del></div>
-            <div class="giasp">Giá : <span>50.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>55.000đ</del></div>
+                    <div class="giasp">Giá : <span>50.000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- het cac san pham -->
+
+    <div class="divBtn">
+        <div class="btnXemThem">
+            <button id="xemThem">Xem thêm</button>
+        </div>
+        <div class="btnAnBot">
+            <button id="anBot">Ẩn bớt</button>
         </div>
     </div>
+    <!-- het nut them ,bot san pham -->
 
-    <footer class="footer">
+    <footer class="footer mt-4">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
@@ -88,6 +144,8 @@
         </div>
     </footer>
     <!-- het footer -->
+
+    <script src="INDEX.JS"></script>
     <script src="DoDung.js"></script>
 
 </body>
