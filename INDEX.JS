@@ -91,19 +91,19 @@ btnAnBot.addEventListener('click', function () {
 
 
 
-function decreaseQuantity() {
-  var quantityInput = document.querySelector('.quantity-input');
-  var currentQuantity = parseInt(quantityInput.value);
-  if (currentQuantity > 1) {
-      quantityInput.value = currentQuantity - 1;
-  }
-}
+// function decreaseQuantity() {
+//   var quantityInput = document.querySelector('.quantity-input');
+//   var currentQuantity = parseInt(quantityInput.value);
+//   if (currentQuantity > 1) {
+//       quantityInput.value = currentQuantity - 1;
+//   }
+// }
 
-function increaseQuantity() {
-  var quantityInput = document.querySelector('.quantity-input');
-  var currentQuantity = parseInt(quantityInput.value);
-  quantityInput.value = currentQuantity + 1;
-}
+// function increaseQuantity() {
+//   var quantityInput = document.querySelector('.quantity-input');
+//   var currentQuantity = parseInt(quantityInput.value);
+//   quantityInput.value = currentQuantity + 1;
+// }
 
 function notifyShop(productElement) {
   var shopEmail = "hieutran11525@gmail.com";
