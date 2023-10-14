@@ -52,17 +52,19 @@
 
     .tensp {
         font-size: 22px;
-        font-weight: bold;
+        font-weight: bolder;
         color: #333;
         margin-bottom: 10px;
     }
 
     .anhsp img {
         width: 100%;
-        height: 300px;
+        height: 310px;
         margin-bottom: 10px;
     }
-
+    .giaVaMua {
+        display: flex;
+    }
     .gia {
         margin-top: 10px;
         width: 50%;
@@ -83,13 +85,7 @@
         margin: 0.2cm 0cm;
         text-align: center;
     }
-    .quantity-buttons{
-        margin-top: 0.2cm;
-        margin-bottom: 0.4cm;
-    }
-    .giaVaMua {
-        display: flex;
-    }
+  
     .buy {
         width: 50%;
         display: inline-block;
@@ -99,10 +95,10 @@
         font-size: 16px;
         border: none;
         border-radius: 4px;
-        transition-duration: 0.4s;
+        transition: 0.4s;
         cursor: pointer;
         text-align: center;
-        line-height: 36px;
+        line-height: 40px;
         font-weight: bolder;
     }
     .buy:hover {
@@ -124,25 +120,7 @@
         color: white;
     }
 
-    .comment {
-        border: 1px solid black;
-        margin-top: 16px;
-        width: 100%;
-    }
-
-    .binhluan {
-        margin-top: 15px;
-    }
-
-    .nhapCMT input {
-        width: 98%;
-    }
-
-    input.vbl {
-        width: 98%;
-    }
-
-    button {
+    .divBtn button {
         display: inline-block;
         padding: 12px 24px;
         font-size: 16px;
@@ -155,9 +133,26 @@
         border-radius: 4px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        border-radius: 10px;
     }
 
+    .footer {
+        background: linear-gradient(to left, #ffceced3, #fff1ee);
+        padding: 40px 0;
+    }
 
+    .footer h3 {
+        color: #333;
+    }
+
+    .footer p {
+        color: #777;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+    }
 
 
 
