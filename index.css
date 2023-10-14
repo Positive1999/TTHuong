@@ -55,7 +55,7 @@ body {
     color: #333;
     margin-bottom: 10px;
 }
-.anhsp {
+/* .anhsp {
     width: 100%;
     overflow: hidden;
 }
@@ -73,12 +73,12 @@ body {
 
 .anhsp:hover .image-container {
     transform: translateX(-100%);
-}
-/* .anhsp img {
+} */
+.anhsp img {
     width: 100%;
     height: 310px;
     margin-bottom: 10px;
-} */
+}
 
 .giaVaMua {
     display: flex;
