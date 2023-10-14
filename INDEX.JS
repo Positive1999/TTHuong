@@ -1,5 +1,5 @@
 // logo
-var logo = document.querySelector('.fa-kitchen-set');
+var logo = document.querySelector('.fa-square-facebook');
 let isRotated = false;
 setInterval(() => {
   if (isRotated) {
@@ -23,78 +23,10 @@ setInterval(() => {
   }
   isDown = !isDown;
 }, 1000);
+//het logo
 
 
-var menu = document.querySelector('.menu');
-var humberger = document.querySelector('.humberger');
-var congtac = false;
-
-humberger.addEventListener('click', () => {
-  congtac = !congtac; // Chuyển đổi giá trị của biến congtac
-
-  if (congtac) {
-    menu.style.display = 'block'; // Hiển thị menu
-  } else {
-    menu.style.display = 'none'; // Ẩn menu
-  }
-});
-
-
-
-
-
-$(document).ready(function () {
-  // Kiểm tra loại màn hình khi tải xong tài liệu
-
-  if (window.matchMedia("(max-width: 600px)").matches) {
-    // Thực hiện hành động dành cho màn hình nhỏ hơn hoặc bằng 600px
-    console.log("Màn hình nhỏ");
-
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        var banner = $('.banner');
-        var bannerBottom = banner.offset().top + banner.outerHeight();
-        var scrollPosition = $(window).scrollTop();
-        var taskbar = $('.taskbar');
-
-        if (scrollPosition >= bannerBottom) {
-          taskbar.css('background-color', 'pink');
-        } else {
-          taskbar.css('background-color', '');
-        }
-      });
-    });
-
-
-  } else if (window.matchMedia("(max-width: 1024px)").matches) {
-    // Thực hiện hành động dành cho màn hình nhỏ hơn hoặc bằng 1024px
-    console.log("Màn hình trung bình");
-  } else {
-    // Thực hiện hành động dành cho màn hình lớn hơn 1024px
-    console.log("Màn hình lớn");
-
-
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        var banner = $('.banner');
-        var bannerBottom = banner.offset().top + banner.outerHeight();
-        var scrollPosition = $(window).scrollTop();
-        var taskbar = $('.taskbar');
-
-        if (scrollPosition >= bannerBottom) {
-          taskbar.css('background-color', 'green');
-          taskbar.css('padding', '10px');
-          taskbar.css('border-radius', '20px');
-        } else {
-          taskbar.css('background-color', '');
-        }
-      });
-    });
-  }
-})
-
-
-
+// click = jquery
 $(function () {
   cmt = $('.comment').offset().top;
   $('.bl').click(function () {
@@ -108,8 +40,10 @@ $(function () {
     $('body,html').animate({ scrollTop: trungBay });
   })
 })
+// click = jquery
 
 
+//nut xem them va an bot
 var products = document.querySelectorAll('.sp');
 var visibleItem = 5;
 var btnXemThem = document.getElementById('xemThem');
@@ -152,6 +86,9 @@ btnAnBot.addEventListener('click', function () {
     btnXemThem.style.display = 'block';
     btnAnBot.style.display = 'none';
 });
+//nut xem them va an bot
+
+
 
 
 
@@ -189,3 +126,28 @@ function notifyShop(productElement) {
   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
+
+
+
+// slider
+  const slider = document.querySelector('.slider');
+  let currentSlide = 0;
+  const slides = slider.querySelectorAll('img');
+  const slideCount = slides.length;
+  const slideWidth = slides[0].clientWidth;
+
+  function moveToSlide(slideIndex) {
+      if (slideIndex < 0 || slideIndex >= slideCount) {
+          return;
+      }
+
+      slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+      currentSlide = slideIndex;
+  }
+
+  function nextSlide() {
+      moveToSlide(currentSlide + 1);
+  }
+
+  setInterval(nextSlide, 3000);
+// slider
