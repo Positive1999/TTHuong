@@ -32,6 +32,7 @@ body {
     color: #e84118;
 }
 
+/* css san pham */
 .cacsp {
     width: 100%;
     display: flex;
@@ -56,25 +57,7 @@ body {
     margin-bottom: 10px;
     text-align: right;
 }
-/* .anhsp {
-    width: 100%;
-    overflow: hidden;
-}
 
-.image-container {
-    width: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.image-container img {
-    width: 100%;
-    height:300px;
-}
-
-.anhsp:hover .image-container {
-    transform: translateX(-100%);
-} */
 .anhsp img {
     width: 100%;
     height: 310px;
@@ -102,6 +85,7 @@ body {
 }
 
 .quantity {
+    display: flex;
     width: 100%;
     margin: 0.2cm 0cm;
     text-align: center;
@@ -126,7 +110,9 @@ body {
 .buy:hover {
     background-color: #45a049;
 }
+/*het css san pham */
 
+/* nut them , an sp */
 #anBot {
     display: none;
 }
@@ -159,7 +145,9 @@ body {
     transition: background-color 0.3s ease;
     border-radius: 10px;
 }
+/*het nut them , an sp */
 
+/* footer */
 .footer {
     background: linear-gradient(to left, #ffceced3, #fff1ee);
     padding: 40px 0;
@@ -177,3 +165,4 @@ body {
     width: 100%;
     height: 300px;
 }
+/* het footer */
