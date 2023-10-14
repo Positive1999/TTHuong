@@ -115,7 +115,7 @@ function notifyShop(productElement) {
   var quantity = parseInt(quantityInput.value);
 
   var priceSpan = productElement.querySelector('.gia span');
-  var price = parseInt(priceSpan.textContent);
+  var price = parseInt(priceSpan.textContent) + "000";
 
   var total = quantity * price;
   var formattedTotal = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
