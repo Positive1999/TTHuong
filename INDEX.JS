@@ -91,7 +91,6 @@ btnAnBot.addEventListener('click', function () {
 
 
 
-
 function decreaseQuantity() {
   var quantityInput = document.querySelector('.quantity-input');
   var currentQuantity = parseInt(quantityInput.value);
