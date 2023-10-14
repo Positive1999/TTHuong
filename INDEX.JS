@@ -9,10 +9,11 @@ setInterval(() => {
   }
   isRotated = !isRotated;
 }, 1200);
+//het logo
 
+//arrow down
 var down = document.querySelector('.fa-down-long');
 let isDown = false;
-
 setInterval(() => {
   if (isDown) {
     down.style.transform = 'translateY(0)';
@@ -23,23 +24,16 @@ setInterval(() => {
   }
   isDown = !isDown;
 }, 1000);
-//het logo
+//het arrow down
 
 
 // click = jquery
-$(function () {
-  cmt = $('.comment').offset().top;
-  $('.bl').click(function () {
-    $('body,html').animate({ scrollTop: cmt });
-  })
-})
-
-$(function () {
-  trungBay = $('.banner').offset().top;
-  $('.trungbay').click(function () {
-    $('body,html').animate({ scrollTop: trungBay });
-  })
-})
+// $(function () {
+//   trungBay = $('.banner').offset().top;
+//   $('.trungbay').click(function () {
+//     $('body,html').animate({ scrollTop: trungBay });
+//   })
+// })
 // click = jquery
 
 
@@ -105,6 +99,8 @@ btnAnBot.addEventListener('click', function () {
 //   quantityInput.value = currentQuantity + 1;
 // }
 
+
+// nut mua hang
 function notifyShop(productElement) {
   var shopEmail = "hieutran11525@gmail.com";
   var subject = "Đặt hàng mới từ khách hàng";
@@ -125,7 +121,7 @@ function notifyShop(productElement) {
   var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
-
+// het nut mua hang
 
 
 // slider
@@ -139,7 +135,6 @@ function notifyShop(productElement) {
       if (slideIndex < 0 || slideIndex >= slideCount) {
           return;
       }
-
       slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
       currentSlide = slideIndex;
   }
@@ -150,3 +145,4 @@ function notifyShop(productElement) {
 
   setInterval(nextSlide, 3000);
 // slider
+
