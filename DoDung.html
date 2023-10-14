@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kho đồ gia dụng</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="DoDung.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 
 <body>
@@ -25,108 +36,379 @@
         <div class="sp">
             <div class="tensp">Cốc P/S</div>
             <div class="anhsp"><img src="img/doDung/cocPS.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>25.000đ</del></div>
-                <div class="giasp">Giá : <span>15.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>25000đ</del></div>
+                    <div class="giasp">Giá : <span>15000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
             </div>
         </div>
+
+
         <div class="sp">
             <div class="tensp">Máy xay</div>
             <div class="anhsp"><img src="img/doDung/mayXay.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>155.000đ</del></div>
-                <div class="giasp">Giá : <span>145.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>155000đ</del></div>
+                    <div class="giasp">Giá : <span>145000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+        </div>
+
+        <div class="sp">
+            <div class="tensp">Vợt cầu lông</div>
+            <div class="anhsp"><img src="img/doDung/vot.jpg" alt=""></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>125000đ</del></div>
+                    <div class="giasp">Giá : <span>119000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+        </div>
+        <div class="sp">
+            <div class="tensp">Áo mưa</div>
+            <div class="anhsp"><img src="img/doDung/aoMua.jpg" alt=""></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>115000đ</del></div>
+                    <div class="giasp">Giá : <span>95000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+        </div>
+
+        <div class="sp">
+            <div class="tensp">Thảm trải nền nhà</div>
+            <div class="anhsp"><img src="img/doDung/tham.jpg" alt=""></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>105000đ</del></div>
+                    <div class="giasp">Giá : <span>95000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
             </div>
         </div>
         <div class="sp">
             <div class="tensp">Đèn gấu LUCKY</div>
             <div class="anhsp"><img src="img/doDung/denGauLucky2.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>89.000đ</del></div>
-                <div class="giasp">Giá : <span>79.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>89000đ</del></div>
+                    <div class="giasp">Giá : <span>79000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
             </div>
         </div>
 
         <div class="sp">
             <div class="tensp">Cây treo quần áo </div>
             <div class="anhsp"><img src="img/doDung/cayTreoQuanAoDaNang.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>130.000đ</del></div>
-                <div class="giasp">Giá : <span>120.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
             </div>
-
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>130000đ</del></div>
+                    <div class="giasp">Giá : <span>120000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
+
         <div class="sp">
             <div class="tensp">Ghế xoay</div>
             <div class="anhsp"><img src="img/doDung/gheXoay.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>460.000đ</del></div>
-                <div class="giasp">Giá : <span>425.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
             </div>
-
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>460000đ</del></div>
+                    <div class="giasp">Giá : <span class="gia-span">425000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
+
         <div class="sp">
             <div class="tensp">Lọ hoa</div>
             <div class="anhsp"><img src="img/doDung/loHoa2.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>150.000đ</del>/2 chiếc</div>
-                <div class="giasp">Giá : <span>75.000đ</span>/2 chiếc</div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
             </div>
-
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>150000đ</del></div>
+                    <div class="giasp">Giá : <span>75000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
+
         <div class="sp">
             <div class="tensp">Máy bào sợi,cắt lát</div>
             <div class="anhsp"><img src="img/doDung/mayBaoSoi.jpg" alt=""></div>
-            <div class="gia">
-                <div class="giasp">Giá cũ: <del>120.000đ</del></div>
-                <div class="giasp">Giá : <span>110.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>120000đ</del></div>
+                    <div class="giasp">Giá : <span>110000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+        </div>
+
+        <div class="sp">
+            <div class="tensp">Dao 8 món</div>
+            <div class="anhsp"><img src="img/doDung/dao.jpg" alt=""></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>125000đ</del></div>
+                    <div class="giasp">Giá : <span>115000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
             </div>
 
         </div>
         <div class="sp">
-            <div class="tensp">Dao 8 món</div>
-            <div class="anhsp"><img src="img/doDung/dao.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>125.000đ</del></div>
-            <div class="giasp">Giá : <span>115.000đ</span></div>
+            <div class="tensp">Bim Bim</div>
+            <div class="anhsp"><img src="img/doAn/bimBim.jpg" alt=""></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>55000đ</del></div>
+                    <div class="giasp">Giá : <span>50000đ</span></div>
+                </div>
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+
         </div>
         <div class="sp">
             <div class="tensp">Cốc gấu thủy tinh</div>
             <div class="anhsp"><img src="img/doDung/cocGauThuyTInh.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>38.000đ</del></div>
-            <div class="giasp">Giá : <span>30.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>38000đ</del></div>
+                    <div class="giasp">Giá : <span>30000đ</span></div>
+                </div>
+
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+
         </div>
         <div class="sp">
             <div class="tensp">Khẩu trang thịnh phát</div>
             <div class="anhsp"><img src="img/doDung/khauTrangThinhPhat.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>58.000đ</del></div>
-            <div class="giasp">Giá : <span>50.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>58000đ</del></div>
+                    <div class="giasp">Giá : <span>50000đ</span></div>
+                </div>
+
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+
         </div>
         <div class="sp">
             <div class="tensp">Chảo tổ ong</div>
             <div class="anhsp"><img src="img/doDung/chao.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>119.000đ</del></div>
-            <div class="giasp">Giá : <span>110.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>119000đ</del></div>
+                    <div class="giasp">Giá : <span>110000đ</span></div>
+                </div>
+
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+
         </div>
         <div class="sp">
             <div class="tensp">Nước giặt hoành thung</div>
             <div class="anhsp"><img src="img/doDung/nuocGiat.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>75.000đ</del></div>
-            <div class="giasp">Giá : <span>67.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>75000đ</del></div>
+                    <div class="giasp">Giá : <span>67000đ</span></div>
+                </div>
+
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+
         </div>
         <div class="sp">
             <div class="tensp">Chai đựng rượu</div>
             <div class="anhsp"><img src="img/doDung/chaiRuou.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>99.000đ</del></div>
-            <div class="giasp">Giá : <span>90.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>99000đ</del></div>
+                    <div class="giasp">Giá : <span>90000đ</span></div>
+                </div>
+
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
         </div>
+
         <div class="sp">
             <div class="tensp">Thìa dĩa mạ vàng</div>
             <div class="anhsp"><img src="img/doDung/thiaDiaMaVang.jpg" alt=""></div>
-            <div class="giasp">Giá cũ: <del>68.000đ</del></div>
-            <div class="giasp">Giá : <span>59.000đ</span></div>
+            <div class="quantity">
+                <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                <!-- <div class="quantity-buttons">
+                    <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                    <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                </div> -->
+            </div>
+            <div class="giaVaMua">
+                <div class="gia">
+                    <div class="giasp">Giá cũ: <del>68000đ</del></div>
+                    <div class="giasp">Giá : <span>59000đ</span></div>
+                </div>
+
+                <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+            </div>
+        </div>
+    </div>
+    <div class="divBtn">
+        <div class="btnXemThem">
+            <button id="xemThem">Xem thêm</button>
+        </div>
+        <div class="btnAnBot">
+            <button id="anBot">Ẩn bớt</button>
         </div>
     </div>
 
-    <script src="DoDung.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Địa chỉ: Xóm 2, VĂN TRAI-VĂN PHÚ-THƯỜNG TÍN-HN</p>
+                    <p>Số điện thoại: 0366991443<p>
+                    <p>Email: huongjennyajes123@gmail.com</p>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h3>Bản đồ</h3>
+                    <div id="map" class=" ">
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5917.877409965012!2d105.85060805403701!3d20.87087696211937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b3319110654b%3A0xbd334674f0a1ac15!2zWMOzbSAyIFbEg24gVHJhaQ!5e0!3m2!1svi!2s!4v1697257265157!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        Đang cập nhật vị trí ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- het footer -->
+    <script src="INDEX.JS"></script>
 </body>
 </html>
