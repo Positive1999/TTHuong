@@ -37,6 +37,42 @@
         <div class="cacsp">
 
             <div class="sp">
+                <div class="tensp">Máy xay</div>
+                <div class="anhsp"><img src="img/doDung/mayXay.jpg" alt=""></div>
+                <div class="quantity">
+                    <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                    <div class="quantity-buttons">
+                        <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                        <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+                <div class="giaVaMua">
+                    <div class="gia">
+                        <div class="giasp">Giá cũ: <del>155000đ</del></div>
+                        <div class="giasp">Giá : <span>145000đ</span></div>
+                    </div>
+                    <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+                </div>
+            </div>
+            <div class="sp">
+                <div class="tensp">Vợt cầu lông</div>
+                <div class="anhsp"><img src="img/doDung/vot.jpg" alt=""></div>
+                <div class="quantity">
+                    <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
+                    <div class="quantity-buttons">
+                        <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                        <button class="quantity-button" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+                <div class="giaVaMua">
+                    <div class="gia">
+                        <div class="giasp">Giá cũ: <del>125000đ</del></div>
+                        <div class="giasp">Giá : <span>119000đ</span></div>
+                    </div>
+                    <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
+                </div>
+            </div>
+            <div class="sp">
                 <div class="tensp">Áo mưa</div>
                 <div class="anhsp"><img src="img/doDung/aoMua.jpg" alt=""></div>
                 <div class="quantity">
@@ -54,6 +90,7 @@
                     <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Mua ngay</div>
                 </div>
             </div>
+
             <div class="sp">
                 <div class="tensp">Thảm trải nền nhà</div>
                 <div class="anhsp"><img src="img/doDung/tham.jpg" alt=""></div>
@@ -349,6 +386,12 @@
             
   <div class="container">
     <footer class="footer">
+
+      <div class="row">
+        <div class="col-md-12">
+         
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-12">
           <p>&copy; 2023 Your Website</p>
