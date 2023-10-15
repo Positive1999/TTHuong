@@ -236,3 +236,13 @@ body {
     justify-content: space-between;
 }
 /* news */
+
+.news .content{
+    height:390px;
+    padding:12px;
+}
+
+.date{
+    color:grey;
+    margin: 13px 10px;
+}
