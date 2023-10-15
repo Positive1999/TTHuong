@@ -91,7 +91,10 @@ body {
     text-align: center;
 }
 .quantity span{
-    width: 100px;
+    width: 40%;
+}
+.quantity input{
+    width: 50%;
 }
 .buy {
     width: 50%;
