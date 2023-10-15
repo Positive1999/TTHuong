@@ -90,7 +90,9 @@ body {
     margin: 0.2cm 0cm;
     text-align: center;
 }
-
+.quantity span{
+    width: 100px;
+}
 .buy {
     width: 50%;
     display: inline-block;
