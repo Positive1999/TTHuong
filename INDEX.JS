@@ -102,7 +102,7 @@ btnAnBot.addEventListener('click', function () {
 
 // nut mua hang
 function notifyShop(productElement) {
-  var shopEmail = "hieutran11525@gmail.com";
+  var shopEmail = "huongjennyarjes@gmail.com";
   var subject = "Đặt hàng mới từ khách hàng";
 
   var productName = productElement.querySelector('.tensp').textContent;
