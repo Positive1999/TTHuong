@@ -146,3 +146,11 @@ function notifyShop(productElement) {
   setInterval(nextSlide, 3000);
 // slider
 
+
+
+$(function () {
+  Header = $('body').offset().top;
+   $('.arrow-up').click(function () {
+     $('body,html').animate({ scrollTop : Header });
+   })
+ })
