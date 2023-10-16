@@ -265,3 +265,23 @@ body {
     color:grey;
     margin: 13px 10px;
 }
+
+@media screen and (max-width:444px){
+    .slide{
+        position: relative;
+    }
+    .slide .buttonBuyNow a{
+        position: absolute;
+        color:#000000;
+        font-weight: bolder;
+        font-size: 16px;
+        background-color: #FFD700;
+        padding:6px 11px;
+        border-radius: 5px;
+        cursor: pointer;
+        left:50%;
+        bottom:6%;
+        transform: translateX(-50%);
+        text-decoration: none;
+    }
+}
