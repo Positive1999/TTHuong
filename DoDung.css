@@ -1,50 +1,59 @@
+.header-doGiaDung {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
 
-    .header-doGiaDung{
-        display: flex;
-        justify-content: space-around;
-        margin: 15px ;
-    }
-    .cancel{
-        background-color: rgb(7, 7, 7);
-        padding:5px 10px;
-        border-radius: 10px;
-    }
-    .cancel a{
-       text-decoration: none;
-       color:white;
-    }
+.cancel {
+    background-color: rgb(7, 7, 7);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
 
-    .tieuDePageDoGiaDung, .tieuDePageDoAn{
-        font-family: "Arial", sans-serif;
-        font-size: 36px;
-        color:#485460;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        margin: 0;
-        padding: 10px;
-        background-color: #f7f7f7;
-        border-bottom: 2px solid #ccc;
-        text-align: center;
-    } 
-    .fa-bars{
-        position: relative;
-    }
-    a.chuyenTrang{
-        display: none;
-        position: absolute;
-        width: 500%;
-        top:200%;
-        right:0%;
-        text-decoration: none;
-        background-color: #888;
-        padding:5px 10px;
-        text-transform: lowercase;
-        color:white;
-        border-radius: 10px;
-        cursor: pointer;
-    }  
+.cancel a {
+    text-decoration: none;
+    color: white;
+}
 
+.tieuDePageDoGiaDung,
+.tieuDePageDoAn {
+    display: flex;
+    justify-content: space-evenly;
 
+}
 
+.tieuDePageDoGiaDung span,
+.tieuDePageDoAn span {
+    width: 18%;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    color: #485460;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #ccc;
+    border-radius: 10px;
+}
 
+.fa-bars {
+    position: relative;
+}
+
+a.chuyenTrang {
+    display: none;
+    position: absolute;
+    width: 500%;
+    top: 200%;
+    right: 0%;
+    text-decoration: none;
+    background-color: #888;
+    padding: 5px 10px;
+    text-transform: lowercase;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
