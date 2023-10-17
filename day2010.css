@@ -7,6 +7,11 @@
 .tensp .color3{
     color:rgba(123, 196, 180, 0.568);
 }
+.color4 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
 
 .tieuDeNgayLe{
     font-size:35px;
