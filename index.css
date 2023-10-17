@@ -271,10 +271,10 @@ body {
     position: fixed;
     bottom: 10px;
     right: 20px;
-    background-color: coral;
+    background: linear-gradient(to left, #ffceced3, #fff1ee);
     padding: 15px;
     border-radius: 50%;
-    color: #fff;
+    color: #000000;
   }
   /* het arrow up */
 
@@ -295,5 +295,8 @@ body {
         bottom:6%;
         transform: translateX(-50%);
         text-decoration: none;
+    }
+    .tieuDeNgayLe{
+        font-size: 10px;
     }
 }
