@@ -1,13 +1,5 @@
-.tensp .color{
-    color:pink;
-}
-.tensp .color2{
-    color:red
-}
-.tensp .color3{
-    color:rgba(123, 196, 180, 0.568);
-}
-.color4 {
+
+.tensp .color {
     color: white;
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: white;
