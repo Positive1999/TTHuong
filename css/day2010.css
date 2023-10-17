@@ -1,0 +1,40 @@
+.tensp .color{
+    color:pink;
+}
+.tensp .color2{
+    color:red
+}
+.tensp .color3{
+    color:rgba(123, 196, 180, 0.568);
+}
+.color4 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
+  .tieuDePage2010{
+    font-size: 28px;
+    background-color: white;
+    padding: 10px 18px;
+    text-align: center;
+    font-weight: bolder;
+}
+.tieuDeNgayLe{
+    font-size:35px;
+    color:#555555ab;
+}
+
+  
+@media screen and (max-width:444px){
+    .tieuDeNgayLe{
+        font-size: 23px;
+}
+.tieuDePage2010{
+    font-size: 23px;
+    background-color: white;
+    padding: 10px 18px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+}
