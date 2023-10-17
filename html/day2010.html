@@ -263,7 +263,7 @@
             </div>
         </div>
         <div class="sp">
-             <div class="tensp">Bó <span class="color">hoa</span></div>
+            <div class="tensp">Bó <span class="color">hoa</span></div>
             <div class="anhsp">
                 <div class="image-container">
                     <img src="../img/day20-10/boHoa2.jpg" alt="">
@@ -275,7 +275,8 @@
             <div class="giaVaMua">
                 <div class="gia">
 
-                    <div class="giasp">Giá : <span>...đ</span></div>
+                    <div class="giasp" style="">Giá : <span id="loading"></span>
+                    </div>
                 </div>
                 <div class="buy" onclick="notifyShop(this.parentElement.parentElement)">Đặt hàng</div>
             </div>
@@ -484,7 +485,24 @@
     <script src="../js-shared/btnDisplayHiddenProduct.js"></script>
     <script src="../js-shared/BuyNow.js"></script>
     <script src="../js-shared/contact-arrow.js"></script>
+    <script src="../js-shared/dot.js"></script>
+<script>
+    // Optional: Show loading after a delay
+setTimeout(showLoading, 500);
 
+function showLoading() {
+  var loadingContainer = document.querySelector('.loading-container');
+  loadingContainer.style.display = 'flex';
+}
+
+// Optional: Hide loading after a certain duration
+setTimeout(hideLoading, 3000);
+
+function hideLoading() {
+  var loadingContainer = document.querySelector('.loading-container');
+  loadingContainer.style.display = 'none';
+}
+</script>
 </body>
 
 </html>
