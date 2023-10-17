@@ -16,6 +16,10 @@
     color:#555555ab;
 }
 
+.ground-img{
+    display: flex;
+    justify-content: center;
+}
   
 @media screen and (max-width:444px){
     .tieuDeNgayLe{
