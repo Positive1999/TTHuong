@@ -1,0 +1,35 @@
+/* nut them , an sp */
+#anBot {
+    display: none;
+}
+
+.divBtn {
+    margin-top: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dodung a,
+.doan a {
+    text-decoration: none;
+    color: white;
+}
+
+.divBtn button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+/*het nut them , an sp */
