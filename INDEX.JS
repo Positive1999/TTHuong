@@ -125,32 +125,37 @@ function notifyShop(productElement) {
 
 
 // slider
-  const slider = document.querySelector('.slider');
-  let currentSlide = 0;
-  const slides = slider.querySelectorAll('img');
-  const slideCount = slides.length;
-  const slideWidth = slides[0].clientWidth;
+  // const slider = document.querySelector('.slider');
+  // let currentSlide = 0;
+  // const slides = document.querySelector('img');
+  // const slideCount = slides.length;
+  // const slideWidth = slides[0].clientWidth;
 
-  function moveToSlide(slideIndex) {
-      if (slideIndex < 0 || slideIndex >= slideCount) {
-          return;
-      }
-      slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-      currentSlide = slideIndex;
-  }
+  // function moveToSlide(slideIndex) {
+  //     if (slideIndex < 0 || slideIndex >= slideCount) {
+  //         return;
+  //     }
+  //     slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  //     currentSlide = slideIndex;
+  // }
 
-  function nextSlide() {
-      moveToSlide(currentSlide + 1);
-  }
+  // function nextSlide() {
+  //     moveToSlide(currentSlide + 1);
+  // }
 
-  setInterval(nextSlide, 3000);
+  // setInterval(nextSlide, 3000);
 // slider
 
 
 
-$(function () {
-  Header = $('body').offset().top;
-   $('.arrow-up').click(function () {
-     $('body,html').animate({ scrollTop : Header });
-   })
- })
+ var ScollHeader = document.getElementById("body");
+ var scrollTop = ScollHeader.scrollTop;
+
+ var btnArrowUp = document.querySelector(".arrow-up");
+ btnArrowUp.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
