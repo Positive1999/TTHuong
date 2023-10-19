@@ -1,7 +1,7 @@
 
 //contact
 function submitContact() {
-  var shopEmail = "hieutran11525@gmail.com";
+  var shopEmail = "huongjennyarjes@gmail.com";
   var subject = "Liên hệ mới từ khách hàng";
 
   var nameInput = document.getElementById('name');
