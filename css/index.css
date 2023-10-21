@@ -11,9 +11,9 @@
     padding:10px 28px;
     border-radius: 10px;
     cursor: pointer;
-    left:50%;
+    left:25%;
     bottom:20%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
     text-decoration: none;
 }
 /* het btn tim hieu them */
@@ -31,7 +31,7 @@
     color: #e84118;
 }
 
-  @media screen and (max-width:444px){
+  @media screen and (max-width:500px){
     .slide{
         position: relative;
     }
@@ -44,9 +44,9 @@
         padding:6px 11px;
         border-radius: 5px;
         cursor: pointer;
-        left:50%;
-        bottom:6%;
-        transform: translateX(-50%);
+        left:25%;
+        bottom:20%;
+        transform: translateX(-55%);
         text-decoration: none;
     }
 
