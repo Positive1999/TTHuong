@@ -353,10 +353,10 @@
 
     <div class="contact-phone">
         <div class="circle">
-            <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-phone"></i>
         </div>
-        <div class="sdt">0366991443</div>
-    </div>
+        <div class="sdt" onclick="makeCall('0366991443')">0366991443</div>
+      </div>
     <!-- het contact phone -->
 
     <div class="arrow-up">
@@ -367,6 +367,11 @@
     <script src="../js-shared/contact-arrow.js"></script>
     <script src="../js-shared/btnDisplayHiddenProduct.js"></script>
     <script src="../js-shared/BuyNow.js"></script>
+    <script>
+        function makeCall(phoneNumber) {
+          window.location.href = 'tel:' + phoneNumber;
+        }
+        </script>
 
 </body>
 
