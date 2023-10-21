@@ -1,0 +1,38 @@
+.fa-star, .fa-ethereum {
+    background: linear-gradient(to right, red, green, rgb(229, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook{
+    color:#0084ff;
+}
+.fa-square-instagram{
+    background: linear-gradient(to left, #405DE6, rgb(224, 0, 187), rgb(229, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-github{
+    color:rgb(255, 0, 255);
+}
+
+.shop , .admin{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 20px;
+}
+.shop:hover , .admin:hover{
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 20px;
+}
+
+
+
+
+@media screen and (max-width:762px) {
+    .img{
+        order: 1;
+    }
+    .contentShop{
+        order: 2;
+    }
+}
