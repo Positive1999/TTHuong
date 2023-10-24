@@ -1,0 +1,36 @@
+   /* CSS cho phần hiển thị phản hồi */
+   .feedback-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feedback-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.feedback-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* CSS cho biểu mẫu thêm phản hồi */
+.feedback-form {
+    margin-bottom: 20px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="file"],
+.feedback-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đồ gia dụng</title>
-   
+
     <link rel="stylesheet" href="css/day2010.css">
     <link rel="stylesheet" href="css-shared/header.css">
     <link rel="stylesheet" href="css-shared/product.css">
     <link rel="stylesheet" href="css-shared/btnDisplayHiddenProduct.css">
     <link rel="stylesheet" href="css-shared/footer.css">
+    <link rel="stylesheet" href="css-shared/feedback.css">
     <link rel="stylesheet" href="css/index.css">
-  
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -110,7 +112,7 @@
        <a class="timHieuThem" href="html/day2010.html">Tìm hiểu thêm</a>
 
     </div> -->
-<!-- het su kien 20-10 -->
+    <!-- het su kien 20-10 -->
 
     <div class="tieuDeCacSpDangGiaoBan text-center mt-5"> Đồ gia dụng <i class="fa-solid fa-down-long"></i> </div>
     <div class="cacsp">
@@ -279,7 +281,7 @@
             <div class="anhsp"><img src="img/doDung/denGauLucky2.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-           
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -295,7 +297,7 @@
             <div class="anhsp"><img src="img/doDung/cayTreoQuanAoDaNang.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-             
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -311,7 +313,7 @@
             <div class="anhsp"><img src="img/doDung/gheXoay.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-           
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -327,7 +329,7 @@
             <div class="anhsp"><img src="img/doDung/loHoa2.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-             
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -343,7 +345,7 @@
             <div class="anhsp"><img src="img/doDung/mayBaoSoi.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-           
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -359,7 +361,7 @@
             <div class="anhsp"><img src="img/doDung/dao.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-            
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -376,7 +378,7 @@
             <div class="anhsp"><img src="img/doDung/cocGauThuyTInh.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-              
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -393,7 +395,7 @@
             <div class="anhsp"><img src="img/doDung/khauTrangThinhPhat.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-               
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -410,7 +412,7 @@
             <div class="anhsp"><img src="img/doDung/chao.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-             
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -427,7 +429,7 @@
             <div class="anhsp"><img src="img/doDung/nuocGiat.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-             
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -444,7 +446,7 @@
             <div class="anhsp"><img src="img/doDung/chaiRuou.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-              
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -461,7 +463,7 @@
             <div class="anhsp"><img src="img/doDung/thiaDiaMaVang.jpg" alt=""></div>
             <div class="quantity">
                 <span>Số lượng: </span><input type="number" class="quantity-input" value="1" min="1">
-             
+
             </div>
             <div class="giaVaMua">
                 <div class="gia">
@@ -496,6 +498,22 @@
     </div>
     <!-- het san pham -->
 
+    <!-- phan hoi -->
+    <div class="container mt-5 border">
+        <h1>Thêm phản hồi</h1>
+        <!-- Hiển thị danh sách phản hồi -->
+        <ul class="feedback-list" id="feedback-list"></ul>
+
+        <!-- Biểu mẫu thêm phản hồi -->
+        <form class="feedback-form" id="feedback-form">
+            <input type="text" id="name-input" placeholder="Tên">
+            <textarea id="message-input" placeholder="Phản hồi"></textarea>
+            <input type="file" id="image-input">
+            <input type="submit" value="Gửi phản hồi">
+        </form>
+    </div>
+    <!-- het phan hoi -->
+
     <footer class="footer mt-4">
         <div class="container">
             <div class="row">
@@ -525,7 +543,7 @@
     </footer>
     <!-- het footer -->
 
-   
+
     <div class="contact-phone">
         <div class="circle">
             <i class="fa-solid fa-phone"></i>
@@ -533,19 +551,20 @@
         <div class="sdt" onclick="makeCall('0366991443')">0366991443</div>
     </div>
     <!-- het contact phone -->
-    
+
     <div class="arrow-up">
         <i class="fa-solid fa-arrow-up"></i>
-      </div>
-      <!-- arrow up -->
+    </div>
+    <!-- arrow up -->
 
-   
+
     <script src="js/INDEX.JS"></script>
     <script src="js-shared/contact-arrow.js"></script>
     <script src="js-shared/btnDisplayHiddenProduct.js"></script>
     <script src="js-shared/BuyNow.js"></script>
     <script src="js-shared/call.js"></script>
-    
+    <script src="js-shared/feedback.js"></script>
+
 </body>
 
 </html>
