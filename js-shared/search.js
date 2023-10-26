@@ -15,4 +15,5 @@
         product.style.display = 'none'; // Ẩn sản phẩm nếu tên sản phẩm không khớp với từ khóa tìm kiếm
       }
     });
+    document.getElementById('searchInput').value = '';
   }
