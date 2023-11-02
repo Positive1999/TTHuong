@@ -15,7 +15,7 @@ function notifyShop(productElement) {
     var total = quantity * price;
     var formattedTotal = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
 
-    var body = "Đơn hàng mới:\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + formattedTotal  + "\nSố điện thoại(người nhận hàng) : "  + "\nĐịa chỉ :(người nhận hàng) : " ;
+    var body = "---THANH TOÁN---\n ***************\n     ***********\n        ********\n\nSản phẩm: " + productName + "\nSố lượng: " + quantity + "\nGiá: " + formattedTotal  + "\nSố điện thoại(người nhận hàng) : "  + "\nĐịa chỉ :(người nhận hàng) : " ;
   
     var mailtoLink = "mailto:" + shopEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     window.location.href = mailtoLink;
